@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+  --color-primary: #22222Fff; 
+  --color-secondary: #2F3243ff; 
+  --color-accent: #232533ff; 
+  --color-special: #FAB12Fff; 
+  --color-gg:  rgb(54, 57, 78); 
+  --color-text: #FFFFFFff;
+
+}
+
+.font1{
+  font-family: "Edu VIC WA NT Hand", cursive;
+  
+}
+.font2{
+  font-family: "Bahiana", cursive;
+}
+.font3{
+  font-family: "Ranchers", cursive;
+}
