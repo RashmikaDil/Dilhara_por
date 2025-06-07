@@ -1,5 +1,5 @@
 import '../App.css'
-import p1 from '../img/p1.png'
+import p1 from '../img/p1.PNG'
 const Projects = () => {
 
     return (<>
