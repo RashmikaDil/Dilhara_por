@@ -1,6 +1,6 @@
-import React from 'react';
+
 import '../App.css'
-import ProgressBar from './Progressbar';
+
 
 const About = () => {
 
