@@ -5,13 +5,13 @@ import '../App.css'
 const About = () => {
 
     return(<>
-    
-    <div className='w-full h-auto bg-accent grid grid-cols-1 sm:grid-cols-5'>
+
+    <div className=" bg-accent w-full h-auto  grid grid-cols-1 sm:grid-cols-5">
 
 
-        <div className='sm:col-span-2 col-span-1 h-full flex items-center justify-center'>
+        <div className='sm:col-span-2 col-span-1 h-full flex  items-center justify-center'>
 
-<h1 className='text-4xl sm:text-6xl font-bold text-text font2 p-2'>About Me</h1>
+<h1 className='   text-4xl sm:text-6xl font-bold text-text font2 p-2'>About Me</h1>
 
         </div>
         <div className='sm:col-span-3 col-span-1 h-full flex items-center justify-center p-10'>
@@ -32,17 +32,17 @@ const About = () => {
 <div className='flex md:flex-row flex-col  justify-center items-center gap-20 p-10'>
 
     <div className='relative bg-gg sm:col-span-2 col-span-1 h-60 w-60 flex flex-col items-center justify-center hover:bg-special transition-all duration-300 scale-100 hover:scale-110 cursor-pointer shadow-2xl'>
-<h1 className='text-2xl bg-special p-1 mt-2 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>01</h1>
+<h1 className='text-2xl bg-special p-1 mt-5 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>01</h1>
     <h1 className='text-3xl font-bold text-text'>UI & UX</h1>
     <p className='text-gray-100 text-center pt-0'>UI UX Designing With Figma</p>
     </div>
     <div className='relative bg-gg sm:col-span-2 col-span-1 h-60 w-60 flex flex-col items-center justify-center hover:bg-special transition-all duration-300 scale-100 hover:scale-110 cursor-pointer shadow-2xl'>
-<h1 className='text-2xl bg-special p-1 mt-2 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>02</h1>
+<h1 className='text-2xl bg-special p-1 mt-5 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>02</h1>
     <h1 className='text-3xl font-bold text-text'>FRONTEND</h1>
     <p className='text-gray-100 text-center pt-0 p-2'>HTML+CSS+JS , REACT JS , TAILWIND CSS</p>
     </div>
      <div className='relative bg-gg sm:col-span-2 col-span-1 h-60 w-60 flex flex-col items-center justify-center hover:bg-special transition-all duration-300 scale-100 hover:scale-110 cursor-pointer shadow-2xl'>
-<h1 className='text-2xl bg-special p-1 mt-2 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>03</h1>
+<h1 className='text-2xl bg-special p-1 mt-5 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>03</h1>
     <h1 className='text-3xl font-bold text-text'>BACKEND</h1>
     <p className='text-gray-100 text-center pt-0 p-2'>NODE JS , EXPRESS JS & MONGODB</p>
     </div>

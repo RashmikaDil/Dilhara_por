@@ -4,10 +4,9 @@ const Projects = () => {
 
     return (<>
    
-    <div className="flex flex-col items-center  h-auto bg-gg ">
+    <div className="flex flex-col items-center pb-10 h-auto bg-gg ">
         <h1 className="text-4xl font-bold mb-8 font2 text-text pt-10">My Projects</h1>
-        <h1 className="text-8xl text-special font-extrabold font2  ">01</h1>
-        <h1 className="text-md text-text font-semibold mb-4">Completed !</h1>
+
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full px-10">
 
 
