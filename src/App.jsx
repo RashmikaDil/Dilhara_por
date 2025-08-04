@@ -5,8 +5,27 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import { useRef } from 'react'
 
 function App() {
+
+  const sectionRef1 = useRef(null);
+  const sectionRef2 = useRef(null);
+  const sectionRef3 = useRef(null);
+
+  const handleScroll = (page) =>{
+    if( page==='about'
+    ){
+sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
+    }else if(page==='skills'){
+      sectionRef2.current?.scrollIntoView({ behavior: 'smooth' });
+    }else if(page==='projects'
+    ){
+      sectionRef3.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+   
+  
+  }
 
   return (
     <>
@@ -28,10 +47,10 @@ function App() {
 
        <div className='flex  p-10 justify-center h-auto w-full text-text'>
         <ul className='flex gap-5 cursor-pointer transition-all  justify-center  text-lg font-semibold'>
-          <li className='hover:text-special transition-all' >About</li>
-          <li className='hover:text-special transition-all'>Skills</li>
-          <li className='hover:text-special transition-all'>Projects</li>
-          <li className='hover:text-special transition-all'>Contact</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('about')} >About</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('skills')}>Skills</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('projects')}>Projects</li>
+          <li className='hover:text-special transition-all' >Contact</li>
         </ul>
 
 
@@ -49,14 +68,18 @@ function App() {
 
 
     </div>
-    
+    <div ref={sectionRef1} >
 <About/>
+</div>
 <div className='w-full md:h-0 h-[800px] bg-secondary '></div>
-
+<div ref={sectionRef2} >
 <Skills/>
+</div>
+<div ref={sectionRef3} >
 <Projects/>
-<Footer></Footer>
-     
+  </div>
+<Footer ></Footer>
+   
     </>
   )
 }
