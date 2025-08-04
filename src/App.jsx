@@ -1,4 +1,5 @@
 import Me from './img/me.png'
+const cv = "https://drive.google.com/file/d/1s41IdoIu43SkCFyCVqLlw3DyNSqwuo0N/view?usp=drive_link"
 import './App.css'
 import SocialMedia from './components/SocialMedia'
 import About from './components/About'
@@ -37,8 +38,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
             <h1 className='sm:text-6xl text-5xl  top-10 drop-shadow-sm left-10 text-gray-200 font-bold wrap-normal ml-10 mt-10 w-1/2 font3'>RASHMIKA <p className='font2 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p></h1>
         
-        <SocialMedia/>
-        
+       
         
         </div>
 
@@ -55,12 +55,13 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
 
        </div>
-       
-<p className='text-text mt-28 text-2xl text-center '> Intern Level Full Stack Developer </p>
+        <SocialMedia/>
+        
+<p className='text-text mt-10 text-2xl text-center '> Intern Level Full Stack Developer </p>
 
 <p className='text-gray-400 mt-2 text-sm pt-2 pl-10 pr-10  text-center '>I am a passionate and dedicated full-stack developer with a strong foundation in both front-end and back-end technologies. I thrive on creating dynamic and responsive web applications that provide exceptional user experiences.</p>
-
-<a href=" " className=' mb-20 font-bold text-special px-4 py-2 mt-5 rounded-sm  transition-all'>Download Resume</a>
+ 
+<a href={cv} target='_blank'  className=' mb-20 font-bold text-special px-4 py-2 mt-5 rounded-sm  transition-all'>Download Resume</a>
        
        </div>
 

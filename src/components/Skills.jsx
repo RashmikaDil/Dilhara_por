@@ -10,6 +10,7 @@ const Skills = () => {
           <ProgressBar name="CSS" progress={80} />
           <ProgressBar name="JavaScript" progress={70} />
           <ProgressBar name="React" progress={65} />
+          <ProgressBar name="Scss/Sass" progress={75} />
         </div>
         <div className='col-span-1 flex flex-col items-center'>
           <ProgressBar name="Tailwind CSS" progress={80} />

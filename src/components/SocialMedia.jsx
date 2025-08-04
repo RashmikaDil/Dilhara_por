@@ -1,9 +1,28 @@
 
-import React from 'react';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const SocialMedia = () => {
   return (
-    <div className="flex  text-8xl  gap-4 mt-4">
+    <div className="flex text-white  text-5xl  gap-10 mt-4">
+
+<a href="https://www.instagram.com/rashmikadil523/" target='blank'>
+  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-gray-400 transition-all' icon={faInstagram}></FontAwesomeIcon>
+</a>
+<a href="https://x.com/RashmikaDil2023" target='blank'>
+  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-gray-400 transition-all' icon={faXTwitter}></FontAwesomeIcon>
+</a>
+<a href="https://www.linkedin.com/in/rashmika-dilhara-47a7102aa/" target='blank'>
+  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-gray-400 transition-all' icon={faLinkedin}></FontAwesomeIcon>
+</a>
+<a href="https://github.com/RashmikaDil" target='blank'>
+  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-gray-400 transition-all' icon={faGithub}></FontAwesomeIcon>
+</a>
+
+
+
 
         
       </div>
