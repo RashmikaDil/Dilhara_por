@@ -7,6 +7,8 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import { useRef } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 
@@ -79,6 +81,10 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 <div ref={sectionRef3} >
 <Projects/>
   </div>
+  <div className='bg-gray-500 text-2xl justify-center flex flex-col items-center  text-amber-50 p-10'>
+<FontAwesomeIcon icon={faPersonDigging} className='text-6xl'/>  Under Construction
+  </div>
+ 
 <Footer ></Footer>
    
     </>
