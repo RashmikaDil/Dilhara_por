@@ -46,10 +46,10 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
         
         </div>
 
-<div className='col-span-3 flex-col  h-full flex items-center pt-10 '>
-         <h1 className='sm:text-6xl text-5xl  top-10 drop-shadow-sm left-10 text-gray-200 font-bold wrap-normal ml-10 mt-10 w-1/2 font3'>RASHMIKA <p className='font2 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p></h1>
-        
-
+<div className='col-span-3 flex-col  h-full flex items-center justify-center pt-10 '>
+         
+        <h1 className='sm:text-5xl flex justify-center col-span-3 text-5xl  top-10 drop-shadow-sm  text-gray-200 font-bold wrap-normal  mt-10 w-1/2 font3'>RASHMIKA</h1>
+          <p className='font2  flex justify-center col-span-3 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p>
 
        <div className='flex  p-10 justify-center h-auto w-full text-text'>
         <ul className='flex gap-5 cursor-pointer transition-all  justify-center  text-lg font-semibold'>
@@ -63,6 +63,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
        </div>
         <SocialMedia/>
         
+
 <p className='text-text mt-10 text-2xl text-center '> Intern Level Full Stack Developer </p>
 
 <p className='text-gray-400 mt-2 text-sm pt-2 pl-10 pr-10  text-center '>I am a passionate and dedicated full-stack developer with a strong foundation in both front-end and back-end technologies. I thrive on creating dynamic and responsive web applications that provide exceptional user experiences.</p>
