@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const SocialMedia = () => {
-  return (
+  return (<>
     <div className="flex text-white  text-5xl  gap-10 mt-4">
 
 <a href="https://www.instagram.com/rashmikadil523/" target='blank'>
@@ -23,10 +23,12 @@ const SocialMedia = () => {
 
 
 
-
         
       </div>
-     
+
+
+      
+     </>
 
   );
 

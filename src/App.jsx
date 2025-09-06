@@ -1,5 +1,8 @@
-import Me from './img/me.png'
-const cv = "https://drive.google.com/file/d/1s41IdoIu43SkCFyCVqLlw3DyNSqwuo0N/view?usp=drive_link"
+
+import baseImg from './img/base.png'
+
+const cv = "https://drive.google.com/file/d/1Uwrf_ROwqTGhDaNLth3GCvxFEIFWtA2t/view?usp=drive_link"
+
 import './App.css'
 import SocialMedia from './components/SocialMedia'
 import About from './components/About'
@@ -32,20 +35,21 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <>
-    <div className='w-full h-auto     bg-secondary grid grid-cols-1 sm:grid-cols-7   '>
-      <div className='sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-auto flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
+
+    <div  className='w-full h-auto      bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
+      <div style={{ backgroundImage: `url(${baseImg})` }} className='bg-cover  bg-no-repeat overflow-hidden sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-95 flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
 
 
-<img src={Me}  alt="My Image" className=' opacity-50 w-1/2 sm:right-0   sm:bottom-0 sm:absolute h-auto  drop-shadow-lg' />
 
-            <h1 className='sm:text-6xl text-5xl  top-10 drop-shadow-sm left-10 text-gray-200 font-bold wrap-normal ml-10 mt-10 w-1/2 font3'>RASHMIKA <p className='font2 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p></h1>
-        
+          
        
         
         </div>
 
 <div className='col-span-3 flex-col  h-full flex items-center pt-10 '>
-       
+         <h1 className='sm:text-6xl text-5xl  top-10 drop-shadow-sm left-10 text-gray-200 font-bold wrap-normal ml-10 mt-10 w-1/2 font3'>RASHMIKA <p className='font2 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p></h1>
+        
+
 
        <div className='flex  p-10 justify-center h-auto w-full text-text'>
         <ul className='flex gap-5 cursor-pointer transition-all  justify-center  text-lg font-semibold'>
