@@ -37,7 +37,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
     <>
 
     <div  className='w-full h-auto      bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
-      <div style={{ backgroundImage: `url(${baseImg})` }} className='bg-cover bg-center bg-no-repeat overflow-hidden sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-95 flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
+      <div style={{ backgroundImage: `url(${baseImg})` }} className='bg-cover bg-center bg-no-repeat overflow-hidden sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-75 flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
 
 
 
