@@ -1,5 +1,5 @@
 
-import baseImg from './img/base.png'
+import baseImg from './img/base3.png'
 
 const cv = "https://drive.google.com/file/d/1Uwrf_ROwqTGhDaNLth3GCvxFEIFWtA2t/view?usp=drive_link"
 
@@ -9,11 +9,16 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
+import SplashCursor from './Cursor'
 
 function App() {
+
+
+
+
 
   const sectionRef1 = useRef(null);
   const sectionRef2 = useRef(null);
@@ -35,7 +40,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <>
-
+    <SplashCursor/>
     <div  className='w-full h-auto      bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
       <div style={{ backgroundImage: `url(${baseImg})` }} className='bg-cover bg-center bg-no-repeat overflow-hidden sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-75 flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
 
@@ -65,6 +70,8 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
         
 
 <p className='text-text mt-10 text-2xl text-center '> Intern Level Full Stack Developer </p>
+
+
 
 <p className='text-gray-400 mt-2 text-sm pt-2 pl-10 pr-10  text-center '>I am a passionate and dedicated full-stack developer with a strong foundation in both front-end and back-end technologies. I thrive on creating dynamic and responsive web applications that provide exceptional user experiences.</p>
  

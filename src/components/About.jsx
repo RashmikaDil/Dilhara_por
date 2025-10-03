@@ -1,17 +1,44 @@
 
+import { useEffect, useRef, useState } from 'react';
 import '../App.css'
 
 
 const About = () => {
 
-    return(<>
+  const [scrollY, setScrollY] = useState(0);
 
-    <div className=" bg-accent w-full h-auto  grid grid-cols-1 sm:grid-cols-5">
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Call it initially to set the state
+    handleScroll();
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+    return(<>
+    <div className='fixed top-0 p-10 text-red-600'>
+   
+       <div className='top-0 fixed text-amber-700'>{scrollY}</div>
+    </div>
+
+    <div className="box1 bg-accent w-full h-auto  grid grid-cols-1 sm:grid-cols-5">
 
 
         <div className='sm:col-span-2 col-span-1 h-full flex  items-center justify-center'>
 
+
 <h1 className='   text-4xl sm:text-6xl font-bold text-text font2 p-2'>About Me</h1>
+
 
         </div>
         <div className='sm:col-span-3 col-span-1 h-full flex items-center justify-center p-10'>
@@ -29,7 +56,7 @@ const About = () => {
     <div className='w-full h-50  relative'>
     <div className='w-full h-50 bg-accent '></div>
     <div className='w-full h-50  absolute top-[-5px]'>
-<div className='flex md:flex-row flex-col  justify-center items-center gap-20 p-10'>
+<div className='sec1 flex md:flex-row flex-col  justify-center items-center gap-20 p-10'>
 
     <div className='relative bg-gg sm:col-span-2 col-span-1 h-60 w-60 flex flex-col items-center justify-center hover:bg-special transition-all duration-300 scale-100 hover:scale-110 cursor-pointer shadow-2xl'>
 <h1 className='text-2xl bg-special p-1 mt-5 rounded-full w-10 h-10 flex justify-center items-center font-bold text-text absolute top-0'>01</h1>

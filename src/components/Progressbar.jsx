@@ -1,12 +1,23 @@
-const ProgressBar = ({ name,progress }) => {
-return (<>
-<div className=" w-full p-2 flex justify-center items-center flex-col">
-<h1 className='text-md font-bold  text-text'>{name}</h1>
-<div className='w-2/3 h-7 bg-gray-700 rounded-sm mt-2'>
-<div className={'font1 h-7 bg-special rounded-sm flex justify-end pr-5 font-bold items-center text-md'} style={{ width: `${progress}%` }}>
-{progress}%
-</div>
-</div></div>
-</>);
-}
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCss, faCss3, faHtml5, faJs, faJsSquare, faMicrosoft, faNode, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faExchange } from "@fortawesome/free-solid-svg-icons";
+
+
+const ProgressBar = ({ name, progress, icon }) => {
+  return (
+    <div className="w-full p-2 flex flex-col items-center">
+      {/* Icon */}
+      <FontAwesomeIcon icon={icon} className="text-2xl mb-2 text-text" />
+
+      {/* Label */}
+      <h1 className="text-md font-bold text-text mb-2">{name}</h1>
+
+<icon></icon>
+     
+
+    </div>
+  );
+};
+
 export default ProgressBar;
