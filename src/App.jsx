@@ -69,7 +69,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
 <div className='col-span-3 flex-col  h-full flex items-center justify-center pt-10 '>
          
-        <h1 className='sm:text-5xl flex justify-center col-span-3 text-5xl  top-10 drop-shadow-sm  text-gray-200 font-bold wrap-normal  mt-10 w-1/2 font3'>RASHMIKA</h1>
+        <h1 className='sm:text-5xl flex justify-center col-span-3 text-5xl  top-10 drop-shadow-sm  text-gray-200 font-bold wrap-normal  mt-10 w-1/2 font2'>RASHMIKA</h1>
           <p className='font2  flex justify-center col-span-3 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p>
 
        <div className='flex  p-10 justify-center h-auto w-full text-text'>

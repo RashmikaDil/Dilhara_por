@@ -5,12 +5,12 @@ const Certifications = ()=>{
 
 
 
-<div className="flex flex-wrap">
+<div className="flex flex-wrap gap-10">
 
 
-   <div className="flex m-5">
-     <div className="relative bg-special w-1 h-90 mr-5"></div>
-            <div className="w-[500px] h-auto">
+   <div className="flex m-5 cursor-pointer">
+     <div className="relative bg-special w-1 h-full mr-5"></div>
+            <div className="w-[400px] h-auto">
                  <p className="font-medium text-white ">Winner Of Online Website competition
                         <p className="font-thin mb-5 text-white/50">Proud to have won the Website Competition 2.0 organized by the PSR Vlog YouTube Channel by introducing an innovative website that rates and reviews tourist destinations in Sri Lanka.
                             </p>  </p>
@@ -18,9 +18,9 @@ const Certifications = ()=>{
         
             </div>
    </div>
-   <div className="flex m-5">
-     <div className="relative bg-special w-1 h-90 mr-5"></div>
-            <div className="w-[500px] h-auto">
+   <div className="flex m-5 cursor-pointer">
+     <div className="relative bg-special w-1 h-full mr-5"></div>
+            <div className="w-[400px] h-auto">
                  <p className="font-medium text-white ">Distinction Pass In Diploma in IT
                         <p className="font-thin mb-5 text-white/50">
                             I have demonstrated my knowledge and skills by earning an IT Diploma with Distinction Pass.  </p>  </p>
