@@ -77,8 +77,10 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
           <li className='hover:text-special transition-all' onClick={() => handleScroll('about')} >About</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('skills')}>Skills</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('projects')}>Projects</li>
-          <li className='hover:text-special transition-all' onClick={() => handleScroll('education')}>Education</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('certificate')}>Achievement</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('education')}>Education</li>
+          
+          
        
         </ul>
 
@@ -109,15 +111,20 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 <div ref={sectionRef2} >
 <Skills/>
 </div>
-<div ref={sectionRef3} >
+  <div ref={sectionRef3} >
 <Projects/>
-  </div>
-  <div ref={sectionRef4} >
-<Education/>
   </div>
     <div ref={sectionRef5} >
 <Certifications/>
   </div>
+  
+  <div ref={sectionRef4} >
+<Education/>
+  </div>
+
+
+
+
   <div className='bg-gray-500 text-2xl justify-center flex flex-col items-center  text-amber-50 p-10'>
 <FontAwesomeIcon icon={faPersonDigging} className='text-6xl'/>  Under Construction
   </div>
