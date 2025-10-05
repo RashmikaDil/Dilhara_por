@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
 
 
@@ -19,9 +20,14 @@
   font-family: "Edu VIC WA NT Hand", cursive;
   
 }
-.font2{
+.font4{
   font-family: "Bahiana", cursive;
 }
 .font3{
   font-family: "Ranchers", cursive;
+}
+.font2{
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
 }

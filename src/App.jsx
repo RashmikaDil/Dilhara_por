@@ -9,10 +9,12 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
-import SplashCursor from './Cursor'
+import ClickSpark from './Spark'
+import Education from './components/Education'
+import Certifications from './components/Certificates'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
   const sectionRef1 = useRef(null);
   const sectionRef2 = useRef(null);
   const sectionRef3 = useRef(null);
+  const sectionRef4 = useRef(null);
+  const sectionRef5 = useRef(null);
 
   const handleScroll = (page) =>{
     if( page==='about'
@@ -30,9 +34,14 @@ function App() {
 sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
     }else if(page==='skills'){
       sectionRef2.current?.scrollIntoView({ behavior: 'smooth' });
-    }else if(page==='projects'
-    ){
+    }else if(page==='projects')
+    
+    {
       sectionRef3.current?.scrollIntoView({ behavior: 'smooth' });
+    }else if(page==='education'){
+      sectionRef4.current?.scrollIntoView({ behavior: 'smooth' })
+    }else if(page === 'certificate'){
+      sectionRef5.current?.scrollIntoView({ behavior: 'smooth' })
     }
    
   
@@ -40,8 +49,15 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <>
-    <SplashCursor/>
-    <div  className='w-full h-auto      bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
+     
+<ClickSpark
+  sparkColor='#fff'
+  sparkSize={10}
+  sparkRadius={15}
+  sparkCount={8}
+  duration={400}
+>
+    <div  className='w-full h-auto   z-0    bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
       <div style={{ backgroundImage: `url(${baseImg})` }} className='bg-cover bg-center bg-no-repeat overflow-hidden sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-75 flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
 
 
@@ -61,7 +77,9 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
           <li className='hover:text-special transition-all' onClick={() => handleScroll('about')} >About</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('skills')}>Skills</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('projects')}>Projects</li>
-          <li className='hover:text-special transition-all' >Contact</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('education')}>Education</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('certificate')}>Achievement</li>
+       
         </ul>
 
 
@@ -83,6 +101,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
 
     </div>
+    </ClickSpark>
     <div ref={sectionRef1} >
 <About/>
 </div>
@@ -92,6 +111,12 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 </div>
 <div ref={sectionRef3} >
 <Projects/>
+  </div>
+  <div ref={sectionRef4} >
+<Education/>
+  </div>
+    <div ref={sectionRef5} >
+<Certifications/>
   </div>
   <div className='bg-gray-500 text-2xl justify-center flex flex-col items-center  text-amber-50 p-10'>
 <FontAwesomeIcon icon={faPersonDigging} className='text-6xl'/>  Under Construction

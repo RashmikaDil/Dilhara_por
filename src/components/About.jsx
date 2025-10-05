@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import '../App.css'
-
+import ClickSpark from '../Spark';
 
 const About = () => {
 
@@ -10,6 +10,7 @@ const About = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
+      
     };
 
     // Add scroll event listener
@@ -26,22 +27,18 @@ const About = () => {
 
 
     return(<>
-    <div className='fixed top-0 p-10 text-red-600'>
-   
-       <div className='top-0 fixed text-amber-700'>{scrollY}</div>
-    </div>
 
-    <div className="box1 bg-accent w-full h-auto  grid grid-cols-1 sm:grid-cols-5">
+    <div className="box1 bg-accent w-full h-auto  grid grid-cols-1 sm:grid-cols-5 z-50">
 
-
-        <div className='sm:col-span-2 col-span-1 h-full flex  items-center justify-center'>
+        <div className=' z-50 sm:col-span-2 col-span-1 h-full flex  items-center justify-center'>
+         
 
 
-<h1 className='   text-4xl sm:text-6xl font-bold text-text font2 p-2'>About Me</h1>
+<h1 className=' z-50   text-4xl sm:text-6xl font-bold text-text font2 p-2'>About Me</h1>
 
 
         </div>
-        <div className='sm:col-span-3 col-span-1 h-full flex items-center justify-center p-10'>
+        <div className='z-50 sm:col-span-3 col-span-1 h-full flex items-center justify-center p-10'>
 
             <p className=' text-lg sm:text-sm text-gray-400'>
                 <span className='text-text '>Hi, I'm Rashmika</span> — a passionate web development student currently pursuing my degree and actively looking for internship opportunities to grow and apply my skills in real-world projects.
@@ -80,6 +77,7 @@ const About = () => {
 </div>
 
 </div>
+
 
 
 

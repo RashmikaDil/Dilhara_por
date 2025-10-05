@@ -85,6 +85,7 @@ const Skills = () => {
     <FontAwesomeIcon className="text-4xl"  icon={faJsSquare}/>
     <h1 className="text-md font-bold text-center  mb-2">Next Js</h1>
 </div>
+
 <div className="flex m-10 w-20 h-10 justify-center items-center flex-col
  text-text cursor-pointer transition-all hover:text-purple-300">
     <FontAwesomeIcon className="text-4xl"  icon={faFigma}/>
