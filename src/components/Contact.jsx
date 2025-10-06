@@ -2,6 +2,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SocialMedia from './SocialMedia'
+import me from '../img/base.png'
+
 
 const Contact = ()=>{
         return(<>
@@ -10,7 +12,9 @@ const Contact = ()=>{
             
         <h1 className="text-4xl font-bold mb-8 font2 text-text pt-10">Contact Me</h1>
                 <div className="w-full flex flex-col items-center pb-10 justify-center gap-2  h-auto ">
-
+                <div className="w-30 h-30 rounded-full overflow-hidden mb-10 cursor-pointer">
+                    <img src={me} alt="" className=" hover:scale-[1.8] transition-all   w-30 h-30 object-cover rounded-full" />
+                </div>
                     <div>
                         <h2 className="text-lg text-white flex items-center font-bold">
                             <FontAwesomeIcon className="mr-1" icon={faEnvelope}/> Email : 
