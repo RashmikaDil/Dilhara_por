@@ -49,7 +49,7 @@ const Certifications = ()=>{
      <div className="relative bg-special w-1 h-full mr-5"></div>
             <div className="w-[320px] h-auto">
                     <div className="h-35">
-                 <p className="font-medium text-white ">Distinction Pass In Diploma in IT
+                 <p className="font-medium text-white ">CCNA Training
                         <p className="font-thin mb-5 text-white/50">
                       Successfully completed the CISCO CCNA Level course, gaining a strong foundation in network fundamentals       </p>  </p>
           </div>

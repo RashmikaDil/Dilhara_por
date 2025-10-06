@@ -9,6 +9,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 import { useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
@@ -27,6 +28,7 @@ function App() {
   const sectionRef3 = useRef(null);
   const sectionRef4 = useRef(null);
   const sectionRef5 = useRef(null);
+  const sectionRef6 = useRef(null);
 
   const handleScroll = (page) =>{
     if( page==='about'
@@ -42,6 +44,8 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
       sectionRef4.current?.scrollIntoView({ behavior: 'smooth' })
     }else if(page === 'certificate'){
       sectionRef5.current?.scrollIntoView({ behavior: 'smooth' })
+    }else if(page === 'contact'){
+      sectionRef6.current?.scrollIntoView({ behavior: 'smooth' })
     }
    
   
@@ -79,6 +83,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
           <li className='hover:text-special transition-all' onClick={() => handleScroll('projects')}>Projects</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('certificate')}>Achievement</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('education')}>Education</li>
+          <li className='hover:text-special transition-all' onClick={() => handleScroll('contact')}>Contact</li>
           
           
        
@@ -121,13 +126,14 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
   <div ref={sectionRef4} >
 <Education/>
   </div>
-
-
-
-
-  <div className='bg-gray-500 text-2xl justify-center flex flex-col items-center  text-amber-50 p-10'>
-<FontAwesomeIcon icon={faPersonDigging} className='text-6xl'/>  Under Construction
+<div ref={sectionRef6} >
+<Contact/>
   </div>
+
+
+
+
+
  
 <Footer ></Footer>
    </ClickSpark>
