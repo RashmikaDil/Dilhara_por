@@ -73,7 +73,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
           <p className='font2  flex justify-center col-span-3 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p>
 
        <div className='flex  p-10 justify-center h-auto w-full text-text'>
-        <ul className='flex gap-5 cursor-pointer transition-all  justify-center  text-lg font-semibold'>
+        <ul className='flex flex-wrap gap-5 cursor-pointer transition-all  justify-center  text-lg font-semibold'>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('about')} >About</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('skills')}>Skills</li>
           <li className='hover:text-special transition-all' onClick={() => handleScroll('projects')}>Projects</li>
