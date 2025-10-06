@@ -12,14 +12,14 @@ const Contact = ()=>{
                 <div className="w-full flex flex-col items-center pb-10 justify-center gap-2  h-auto ">
 
                     <div>
-                        <h2 className="text-xl text-white flex items-center font-bold">
-                            <FontAwesomeIcon className="mr-2" icon={faEnvelope}/> Email : 
-                            <p className="ml-5 text-white/70 font-normal"> Rashmikadil2023@gmail.com</p> </h2>
+                        <h2 className="text-lg text-white flex items-center font-bold">
+                            <FontAwesomeIcon className="mr-1" icon={faEnvelope}/> Email : 
+                            <p className="ml-2 text-white/70 font-normal"> Rashmikadil2023@gmail.com</p> </h2>
                     </div> 
                      <div>
-                        <h2 className="text-xl text-white items-center flex font-bold">
-                            <FontAwesomeIcon className="mr-2" icon={faPhone}/>Phone No : 
-                            <p className="ml-5 text-white/70 font-normal"> +94767000149</p> </h2>
+                        <h2 className="text-lg text-white items-center flex font-bold">
+                            <FontAwesomeIcon className="mr-1" icon={faPhone}/>Phone No : 
+                            <p className="ml-2 text-white/70 font-normal"> +94767000149</p> </h2>
                     </div>    
                     
                           <div className="mt-4 flex flex-col justify-center">
