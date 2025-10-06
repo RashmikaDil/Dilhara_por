@@ -103,7 +103,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
 
     </div>
-    </ClickSpark>
+    
     <div ref={sectionRef1} >
 <About/>
 </div>
@@ -130,7 +130,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
   </div>
  
 <Footer ></Footer>
-   
+   </ClickSpark>
     </>
   )
 }
