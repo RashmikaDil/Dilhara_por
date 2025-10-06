@@ -19,10 +19,10 @@ const SocialMedia = () => {
   <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-special transition-all' icon={faLinkedin}></FontAwesomeIcon>
 </a>
 <a href="https://web.facebook.com/RashmikaDilharaFB" target='blank'>
-  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-special transition-all' icon={faThreads}></FontAwesomeIcon>
+  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-special transition-all' icon={faFacebook}></FontAwesomeIcon>
 </a>
 <a href="https://www.threads.com/@rashmikadil523" target='blank'>
-  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-special transition-all' icon={faFacebook}></FontAwesomeIcon>
+  <FontAwesomeIcon className='text-amber-50 cursor-pointer hover:text-special transition-all' icon={faThreads}></FontAwesomeIcon>
 </a>
 
 <a href="https://github.com/RashmikaDil" target='blank'>
