@@ -2,7 +2,7 @@ import "../App.css";
 import p1 from "../img/p1.PNG";
 import snapLinkz from "../img/snapLinkz.png";
 import p3 from "../img/c3.PNG";
-import p4 from "../img/c4.PNG";
+import p4 from "../img/p4.png";
 const Projects = () => {
   return (
     <>
