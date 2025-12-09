@@ -3,6 +3,15 @@ import p1 from "../img/p1.PNG";
 import snapLinkz from "../img/snapLinkz.png";
 import p3 from "../img/c3.PNG";
 import p4 from "../img/p4.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCss,
+  faJsfiddle,
+  faMicrosoft,
+  faNodeJs,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 const Projects = () => {
   return (
     <>
@@ -25,6 +34,12 @@ const Projects = () => {
               <div className="p-2 text-sm bg-special h-10 flex justify-center text-center items-center w-30">
                 MERN STACK
               </div>
+            </div>
+            <div className="flex pl-5 text-center items-center  pr-5 gap-5 pt-3 mb-4 text-white">
+              <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faJsfiddle}></FontAwesomeIcon>
             </div>
 
             <p className="text-gray-400 text-sm pl-5 pr-5">
@@ -59,7 +74,12 @@ const Projects = () => {
                 MERN STACK
               </div>
             </div>
-
+            <div className="flex pl-5 text-center items-center  pr-5 gap-5 pt-3 mb-4 text-white">
+              <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faJsfiddle}></FontAwesomeIcon>
+            </div>
             <p className="text-gray-400 text-sm pl-5 pr-5">
               SnapLinkz is a modern and lightweight URL shortener web
               application built with the MERN stack (MongoDB, Express, React,
@@ -91,6 +111,12 @@ const Projects = () => {
                 MERN STACK
               </div>
             </div>
+            <div className="flex pl-5 text-center items-center  pr-5 gap-5 pt-3 mb-4 text-white">
+              <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faJsfiddle}></FontAwesomeIcon>
+            </div>
             <p className="text-gray-400 text-sm pl-5 pr-5">
               StockFlow POS is a modern, all-in-one Point-of-Sale solution
               designed to simplify sales, inventory, and customer management for
@@ -114,6 +140,9 @@ const Projects = () => {
               <div className="p-2 text-sm bg-special h-10 flex justify-center text-center items-center w-30">
                 POWERAPPS
               </div>
+            </div>
+            <div className="flex pl-5 text-center items-center  pr-5 gap-5 pt-3 mb-4 text-white">
+              <FontAwesomeIcon icon={faMicrosoft}></FontAwesomeIcon>
             </div>
             <p className="text-gray-400 text-sm pl-5 pr-5">
               I developed a custom Kanban management application using Microsoft
