@@ -27,7 +27,7 @@ const About = () => {
 
 
     return(<>
-
+  
     <div className="box1 bg-accent w-full h-auto  grid grid-cols-1 sm:grid-cols-5 z-50">
 
         <div className=' z-50 sm:col-span-2 col-span-1 h-full flex  items-center justify-center'>

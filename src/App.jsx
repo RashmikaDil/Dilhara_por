@@ -1,4 +1,7 @@
 
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+
 import baseImg from './img/base3.png'
 
 const cv = "https://drive.google.com/file/d/1Uwrf_ROwqTGhDaNLth3GCvxFEIFWtA2t/view?usp=drive_link"
@@ -10,15 +13,13 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
-import { useRef } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useRef } from 'react'
+
 import ClickSpark from './Spark'
 import Education from './components/Education'
 import Certifications from './components/Certificates'
 
 function App() {
-
 
 
 
@@ -29,6 +30,14 @@ function App() {
   const sectionRef4 = useRef(null);
   const sectionRef5 = useRef(null);
   const sectionRef6 = useRef(null);
+
+
+
+
+
+
+
+
 
   const handleScroll = (page) =>{
     if( page==='about'
@@ -50,10 +59,11 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
    
   
   }
+ 
 
   return (
     <>
-     
+    
 <ClickSpark
   sparkColor='#fff'
   sparkSize={10}
@@ -61,8 +71,12 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
   sparkCount={8}
   duration={400}
 >
-    <div  className='w-full h-auto   z-0    bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
+
+    <div  className='w-full h-auto   z-20    bg-secondary grid grid-cols-1 sm:grid-cols-7   ' >
       <div style={{ backgroundImage: `url(${baseImg})` }} className='bg-cover bg-center bg-no-repeat overflow-hidden sm:col-span-4 col-span-1 bg-secondary relative sm:h-full h-75 flex-col sm:flex-row flex sm:justify-normal sm:items-baseline justify-center items-center '>
+
+
+
 
 
 
@@ -71,7 +85,7 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
         
         </div>
 
-<div className='col-span-3 flex-col  h-full flex items-center justify-center pt-10 '>
+<div className='col-span-3 flex-col z-20 h-full flex items-center justify-center pt-10 '>
          
         <h1 className='sm:text-5xl flex justify-center col-span-3 text-5xl  top-10 drop-shadow-sm  text-gray-200 font-bold wrap-normal  mt-10 w-1/2 font2'>RASHMIKA</h1>
           <p className='font2  flex justify-center col-span-3 text-gray-400 text-3xl sm:text-5xl '>Dilhara</p>
@@ -134,9 +148,11 @@ sectionRef1.current?.scrollIntoView({ behavior: 'smooth' });
 
 
 
+
  
 <Footer ></Footer>
    </ClickSpark>
+   
     </>
   )
 }
